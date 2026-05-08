@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>M7 Average Calculator</title>
+    <link rel="shortcut icon" type="image/png" href="شعار دائري لسلسلة M7.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- NAVBAR -->
+    <nav>
+        <div class="logo-container">
+            <img src="شعار دائري لسلسلة M7.png" alt="M7 Logo">
+            <h2>M7 Average Calculator</h2>
+        </div>
+
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#calculator">Calculator</a></li>
+        </ul>
+    </nav>
+
+    <!-- HOME -->
+    <header id="home">
+
+        <div class="overlay"></div>
+
+        <div class="header-content">
+
+            <img src="شعار دائري لسلسلة M7.png" class="main-logo">
+
+            <h1>Student Average Calculator</h1>
+
+            <p class="intro">
+                A modern and simple calculator designed for students to
+                calculate module averages and semester averages using
+                TD, TP, Exam marks and coefficients.
+            </p>
+
+            <a href="#calculator">
+                <button>Start Calculating</button>
+            </a>
+
+        </div>
+
+    </header>
+
+    <!-- CALCULATOR -->
+    <section id="calculator">
+
+        <h2>Average Calculator</h2>
+
+        <div class="form-container">
+
+            <input type="text" id="module" placeholder="Module Name">
+
+            <input type="number" id="td" placeholder="TD Mark">
+
+            <input type="number" id="tp" placeholder="TP Mark">
+
+            <input type="number" id="exam" placeholder="Exam Mark">
+
+            <input type="number" id="coeff" placeholder="Coefficient">
+
+            <button onclick="addModule()">Add Module</button>
+
+        </div>
+
+        <div class="table-container">
+
+            <table>
+
+                <thead>
+                    <tr>
+                        <th>Module</th>
+                        <th>Average</th>
+                        <th>Coefficient</th>
+                    </tr>
+                </thead>
+
+                <tbody id="tableBody">
+
+                </tbody>
+
+            </table>
+
+        </div>
+
+        <div class="final-result">
+            Final Average :
+            <span id="finalAverage">0.00</span>
+        </div>
+
+    </section>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
