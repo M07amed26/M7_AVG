@@ -264,6 +264,27 @@ tr:hover {
     color: #e50914;
 }
 
+footer {
+    background: #111;
+    text-align: center;
+    padding: 35px 20px;
+    border-top: 1px solid #222;
+}
+
+footer h3 {
+    color: #e50914;
+    margin-bottom: 10px;
+}
+
+footer p {
+    color: #b3b3b3;
+    margin: 5px 0;
+}
+
+.creator {
+    color: white;
+}
+
 /* MOBILE */
 
 @media (max-width: 768px) {
